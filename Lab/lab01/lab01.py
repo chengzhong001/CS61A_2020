@@ -57,10 +57,19 @@ def double_eights(n):
     False
     """
     "*** YOUR CODE HERE ***"
+    # count = 0
+    # str_8 = str(n)
+    # if str_8.find("88") > -1:
+    #     return True
     count = 0
-    str_8 = str(n)
-    if str_8.find("88") > -1:
-        return True
+    while n > 0:
+        if n % 10 == 8:
+            count += 1
+        elif count == 1:
+            count = 0
+        n //= 10
+        if count == 2:
+            return True
     return False
 
 
