@@ -102,13 +102,15 @@ def with_if_function():
 def cond():
     "*** YOUR CODE HERE ***"
     return False
+    
 def true_func():
     "*** YOUR CODE HERE ***"
+    print(42)
     
 
 def false_func():
     "*** YOUR CODE HERE ***"
-
+    print(47)
 
 
 def hailstone(x):
@@ -137,3 +139,5 @@ def hailstone(x):
         cnt += 1
     print(x)
     return cnt
+
+print(with_if_function())
